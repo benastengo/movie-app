@@ -1,0 +1,5 @@
+GET http://localhost:3000/all_movies
+
+###
+
+GET http://localhost:3000/find_by
