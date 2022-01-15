@@ -3,4 +3,8 @@ Rails.application.routes.draw do
   
   get "/find_by/:id" => "movies#find_by_method"
 
+  get "/actor_query/:id" => "actors#query"
+
+  post "/actor_query/:id" => "actors#query"
+
 end

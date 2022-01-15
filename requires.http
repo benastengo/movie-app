@@ -3,3 +3,9 @@ GET http://localhost:3000/all_movies
 ###
 
 GET http://localhost:3000/find_by
+
+###
+GET http://localhost:3000/actor_query/6
+
+###
+POST http://localhost:3000/actor_query/11
