@@ -1,10 +1,26 @@
 Rails.application.routes.draw do
-  get "/all_movies" => "movies#all_movies_method"
+  Rails.application.routes.draw do
+    get "/movies" => "movies#index"
+
+    post "/movies" => "movies#create"
+
+    get "/movies/:id" => "movies#show"
+
+    patch "/movies/:id" => "movies#update"
+
+    delete "/movies/:id" => "movies#destroy"
+
   
-  get "/find_by/:id" => "movies#find_by_method"
+    get "/actors" => "actors#index"
 
-  get "/actor_query/:id" => "actors#query"
+    post "/actors" => "actors#create"
 
-  post "/actor_query/:id" => "actors#query"
+    get "/actors/:id" => "actors#show"
+
+    patch "/actors/:id" => "actors#update"
+
+    delete "/actors/:id" => "actors#destroy"
+    
+  end
 
 end

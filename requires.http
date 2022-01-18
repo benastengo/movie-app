@@ -1,11 +1,42 @@
-GET http://localhost:3000/all_movies
+GET http://localhost:3000/movies
 
 ###
 
-GET http://localhost:3000/find_by
+GET http://localhost:3000/movies
 
 ###
-GET http://localhost:3000/actor_query/6
+GET http://localhost:3000/actors
 
 ###
-POST http://localhost:3000/actor_query/11
+POST http://localhost:3000/actors
+
+Content-Type: application/json
+
+{
+  "first_name": "Matt",
+  "last_name": "Damon",
+  "known_for": "How do you like them apples?"
+}
+
+###
+
+DELETE http://localhost:3000/actors/6
+
+### 
+
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "Lion King",
+  "year": 1993,
+  "plot": "Hakuna Matata"
+}
+
+###
+PATCH http://localhost:3000/movies/3
+Content-Type: application/json
+
+{
+  "year": 1920
+}
