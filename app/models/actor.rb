@@ -4,4 +4,6 @@ class Actor < ApplicationRecord
   validates :known_for, presence: true
   validates :age, numericality: true
   validates :age, numericality: { greater_than_or_equal_to: 13 }
+
+  belongs_to :movie
 end

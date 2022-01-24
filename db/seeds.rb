@@ -35,14 +35,14 @@
 
 # actor.save
 
-movie = Movie.new(title: FFaker::Movie.title, year: 2011, plot: "Something strange happened in a strange land far away....strangely....strange.")
+# movie = Movie.new(title: FFaker::Movie.title, year: 2011, plot: "Something strange happened in a strange land far away....strangely....strange.")
 
-movie.save
+# movie.save
 
-movie = Movie.new(title: FFaker::Movie.title, year: 2002, plot: "It was the best of times it was the worst of times..")
+# movie = Movie.new(title: FFaker::Movie.title, year: 2002, plot: "It was the best of times it was the worst of times..")
 
-movie.save
+# movie.save
 
-movie = Movie.new(title: FFaker::Movie.title, year: 1999, plot: "Lets relive some of the best years that ever existed, but with a twist! .... directed by M. Night. Shyamalon")
+# movie = Movie.new(title: FFaker::Movie.title, year: 1999, plot: "Lets relive some of the best years that ever existed, but with a twist! .... directed by M. Night. Shyamalon")
 
-movie.save
+# movie.save
