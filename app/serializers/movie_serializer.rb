@@ -1,5 +1,5 @@
 class MovieSerializer < ActiveModel::Serializer
-  attributes :id, :title, :year, :plot, :director, :english
+  attributes :id, :title, :year, :plot, :english
 
-  has_many :actors
+  has_many :genres
 end
