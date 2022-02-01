@@ -1,5 +1,5 @@
 @domain = http://localhost:3000
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDM0Mjc1ODd9.P94v_HZ0U-t_SB5DsvDIKrUplO8PKpVicbBso01WD6M
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDM3NTM1Mjh9.RNlVOtcLGKl9KOyzbi5fr6quCo2fcKOfSeQRblSp7NM
 
 GET {{ domain }}/movies
 
@@ -62,4 +62,13 @@ Content-Type: application/json
 {
   "email": "test@test.com",
   "password": "password"
+}
+
+### MovieGenre create
+POST {{ domain }}/movie_genres/
+Content-Type: application/json
+
+{
+  "movie_id": 1,
+  "genre_id": 1
 }
